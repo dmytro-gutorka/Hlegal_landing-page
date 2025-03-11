@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+    &-info{
+        margin-bottom: 18.5px;
+    }
+
+    &-list{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+//0 323264
+// 60 323264
+// 100 643E72
