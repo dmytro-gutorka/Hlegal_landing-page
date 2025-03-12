@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,62 +41,81 @@
     </header>
 
     <main class="container">
-      <div class="hero center bckg-gradient">
+
+      <section class="hero bckg-gradient">
+
+      <div class="bckg-gradient">
         <h1 class="hero-header">you legal solutions provider</h1>
-        <img class="hero-image" src="./images/symbol-h.svg" alt="" />
+        <!-- <img class="hero-image" src="./images/symbol-h.svg" alt="" /> -->
       </div>
 
-      <section class="bckg-gradient">
-        <ul>
-          <li>Consistent</li>
-          <li>Customer oriented</li>
-          <li>Innovative</li>
-          <li>Business oriented</li>
+
+      <div class="hero__container">
+
+        <ul class="hero__values">
+          <li class="hero__values-item hero__values-item--active">Consistent</li>
+          <li class="hero__values-item">Customer oriented</li>
+          <li class="hero__values-item">Innovative</li>
+          <li class="hero__values-item">Business oriented</li>
         </ul>
-        <h2>We turn the idea of legal services</h2>
-        <p>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+
+        <div class="hero__content">
+          <h2 class="hero__content-header">We turn the idea of legal services</h2>
+          <p class="hero__content-description">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+        </div>
+
+        </div>
+
       </section>
 
-      <section class="bckg-gradient">
-        <p>Services</p>
-        <h2>What can we do better than others?</h2>
+      <section class="services bckg-gradient">
+        <div class="services__inner-wrapper">
+          <div class="services__header">
+          <p class="services__label section-labels">Services</p>
+        <h2 class="services__header text-header">What can we do better than others?</h2>
+          </div>
 
-        <article>
-          <img src="./icons/service-icon1.svg" alt="" />
-          <h3>IT and e-commerce</h3>
-          <p>An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+          <div class="services__card-container">
+
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon1.svg" alt="" />
+          <h3 class="services__card-header">IT and e-commerce</h3>
+          <p class="services__card-description">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
         </article>
 
-        <article>
-          <img src="./icons/service-icon2.svg" alt="" />
-          <h3>Comprehensive daily legal support</h3>
-          <p>In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon2.svg" alt="" />
+          <h3 class="services__card-header">Comprehensive daily legal support</h3>
+          <p class="services__card-description">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
         </article>
 
-        <article>
-          <img src="./icons/service-icon3.svg" alt="" />
-          <h3>Structuring corporate relationships</h3>
-          <p>Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon3.svg" alt="" />
+          <h3 class="services__card-header">Structuring corporate relationships</h3>
+          <p class="services__card-description">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
         </article>
 
-        <article>
-          <img src="./icons/service-icon4.svg" alt="" />
-          <h3>Building contractual relations</h3>
-          <p>Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon4.svg" alt="" />
+          <h3 class="services__card-header">Building contractual relations</h3>
+          <p class="services__card-description">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
         </article>
 
-        <article>
-          <img src="./icons/service-icon5.svg" alt="" />
-          <h3>Protection of business, intellectual property</h3>
-          <p>And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon5.svg" alt="" />
+          <h3 class="services__card-header">Protection of business, intellectual property</h3>
+          <p class="services__card-description">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
         </article>
 
-        <article>
-          <img src="./icons/service-icon6.svg" alt="" />
-          <h3>Judicial representation</h3>
-          <p>Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+        <article class="services__card">
+          <img class="services__card-image" src="./icons/service-icon6.svg" alt="" />
+          <h3 class="services__card-header">Judicial representation</h3>
+          <p class="services__card-description">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
         </article>
+        </div>
       </section>
+
+      </div> 
 
       <div>
         <article>

@@ -4,6 +4,7 @@
   align-items: center;
   padding-top: 50px;
   padding-inline: 60px;
+  padding-bottom: 260px;
 }
 .header-list {
   display: flex;
@@ -43,15 +44,85 @@
   right: -10px;
 }
 
-.hero-image {
+.hero__container {
+  display: flex;
+  gap: 125px;
+  padding-inline: 180px;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.hero__content {
+  color: white;
+  width: 50%;
+}
+.hero__content-header {
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.hero__content-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.hero__values {
+  position: relative;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 38px;
+  text-align: right;
+  color: #B3B3BA;
+}
+.hero__values .hero__values-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.hero__values-item--active {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero__values::after {
+  content: "";
   position: absolute;
+  display: block;
+  left: calc(100% + 60px);
   top: 0px;
+  width: 4px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.3019607843);
 }
 
-:root {
-  --color-promary: blue;
-  --color-secondary: blue;
-  --background-color-main: ;
+.services {
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+.services__inner-wrapper {
+  padding-inline: 60px;
+  padding-bottom: 60px;
+}
+.services__header {
+  margin-bottom: 60px;
+}
+.services__card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 60px;
+}
+.services__card-image {
+  margin-bottom: 30px;
+}
+.services__card-header {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #24A3FF;
+  margin-bottom: 15px;
+}
+.services__card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFFFFF;
 }
 
 *,
@@ -87,4 +158,21 @@ body {
 .bckg-gradient {
   background: rgb(50, 50, 100);
   background: linear-gradient(90deg, rgb(50, 50, 100) 0%, rgb(50, 50, 100) 60%, rgb(100, 62, 114) 100%);
+}
+
+.text-header {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-labels {
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.15;
+  color: #24A3FF;
 }/*# sourceMappingURL=style.css.map */
