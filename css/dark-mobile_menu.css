@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: white;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: none;
+}
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        min-height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 30px;
+    }
+}
+
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link{
+    transition: 0.3s ease-out;
+}
+
+.nav-link:hover{
+    color: dodgerblue;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+.hamburger {
+    position: absolute;
+    top: 10%;
+    right: 6%;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.hamburger.active .bar {
+    background-color: #ffffff;
+}
+
+@media(max-width:600px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: 100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background: #292954;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 9;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: right;
+    }
+    .nav-item:hover {
+        color: #0085ff;
+    }
+    .nav-item:active {
+        color: #f0145a;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
